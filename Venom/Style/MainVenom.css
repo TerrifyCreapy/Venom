@@ -1,10 +1,13 @@
 body {
     margin: 0 auto;
     padding: 0 auto;
-    background: #000;
+    
     font-family: 'Roboto', sans-serif;
     width: auto;
     height: auto;
+    background:url(/Style/Images/Blood.png) no-repeat top right,
+    url(/Style/Images/MainBGImage.png) no-repeat center center/100%,
+    #14131A;
 }
 header {
     max-width: 1140px;
@@ -39,6 +42,7 @@ nav {
 }
 #UlNavi {
     display: flex;
+    list-style-type: none;
 
 }
 .LiNavi {
@@ -57,7 +61,6 @@ header {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-    border-bottom: white 1px solid;
 }
 
 .date {
@@ -84,5 +87,54 @@ header {
     line-height: 25px;
     padding-bottom: 58px;
 }
+
+.button {
+    transition: 1s;
+    align-items: center;
+    padding: 15px 30px;
+    width: 204px;
+    height: 46px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #8D0019;
+}
+
+.button:hover {
+    width: 240px;
+    height: 60px;
+    transition: 1s;
+}
+
+.button-text {
+    font-size: 14px;
+}
+
+.button-link {
+    padding-left: 50px;
+    color: white;
+}
+
+.button-link:hover {
+    color: white;
+}
+
+.button-icon, .button-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.venom {
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+/* .blood {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+} */
 
 
